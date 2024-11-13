@@ -403,8 +403,13 @@ section, aside, footer {
 .footer-container {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+.links-container {
+    display: flex;
     gap: 1.6rem;
+    align-items: center;
 }
 
 footer a, footer p{
