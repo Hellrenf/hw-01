@@ -376,6 +376,11 @@ section, aside, footer {
     height: 3rem;
     stroke: #222222;
     cursor: pointer;
+    transition: all .2s;
+}
+
+.q-open:hover {
+    stroke: #383838;
 }
 
 .aside-container {
@@ -399,6 +404,12 @@ section, aside, footer {
     font-size: 2rem;
     text-decoration: none;
     color: #222222;
+    transition: all .1s;
+}
+
+.aside-item a:link:hover,
+.aside-item a:visited:hover {
+    color: #383838;
 }
 
 .footer-container {
@@ -421,8 +432,13 @@ footer a, footer p{
 footer img {
     height: 2rem;
 }
+
 .social-img {
     cursor: pointer;
+    transition: all .2s;
+}
+.social-img:hover {
+    opacity: 0.92;
 }
 
 .language:link {
@@ -434,9 +450,13 @@ footer img {
 .currency:link,
 .currency:visited {
     text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all .2s;
 }
 
 .language:link:hover,
 .currency:link:hover {
-    text-decoration: underline;
+    color: #383838;
+    border-bottom: 1px solid currentColor;
 }
+
