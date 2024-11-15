@@ -93,6 +93,15 @@ section, aside, footer {
 .more-about:visited {
     color: #5C5858;
     font-size: 1.6rem;
+    text-decoration: none;
+    padding-bottom: .2rem;
+    border-bottom: 1px solid currentColor;
+    transition: all .1s;
+}
+.more-about:link:hover,
+.more-about:visited:hover {
+    border-bottom: 1px solid transparent;
+    color: #6c6969;
 }
 
 .input-container {
@@ -134,8 +143,6 @@ section, aside, footer {
     text-decoration: underline;
     text-decoration-thickness: 1px;
 }
-
-/*------- CHAT GPT -------*/
 
 .range-input {
     -webkit-appearance: none;
@@ -180,8 +187,6 @@ section, aside, footer {
     cursor: pointer;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
-
-/*-------------------------------*/
 
 .choose-section-container {
     display: flex;
@@ -241,10 +246,6 @@ section, aside, footer {
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     gap: 1.6rem;
-}
-
-.partner-img-container {
-
 }
 
 .partner-img-container img {
